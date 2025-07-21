@@ -1,0 +1,39 @@
+{
+  "name": "goa-resi",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "Website informasi pariwisata Goa Resi",
+  "main": "client/index.jsx",
+  "scripts": {
+    "client": "esbuild --bundle --target=es6 --minify --outdir=public ./client/index.jsx",
+    "client:dev": "esbuild --bundle --target=es6  --sourcemap --watch --loader:.woff=dataurl --loader:.woff2=dataurl --outdir=public ./client/index.jsx",
+    "server": "node server/server.js",
+    "server:dev": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindduncoding/goa-resi.git"
+  },
+  "author": "Fidelya Fredelina, Reza Pramban Danu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lindduncoding/goa-resi/issues"
+  },
+  "homepage": "https://github.com/lindduncoding/goa-resi#readme",
+    "devDependencies": {
+    "esbuild": "^0.25.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "nodemon": "^3.1.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
