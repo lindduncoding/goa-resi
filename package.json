@@ -1,14 +1,14 @@
 {
   "name": "goa-resi",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "description": "Website informasi pariwisata Goa Resi",
   "main": "client/index.jsx",
   "scripts": {
     "client": "esbuild --bundle --target=es6 --minify --outdir=public ./client/index.jsx",
     "client:dev": "esbuild --bundle --target=es6  --sourcemap --watch --loader:.woff=dataurl --loader:.woff2=dataurl --outdir=public ./client/index.jsx",
-    "server": "node server/server.js",
-    "server:dev": "nodemon server/index.js",
+    "client:serve": "esbuild --serve=3000 --servedir=public --watch",
+    "client:build": "node build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +21,7 @@
     "url": "https://github.com/lindduncoding/goa-resi/issues"
   },
   "homepage": "https://github.com/lindduncoding/goa-resi#readme",
-    "devDependencies": {
+  "devDependencies": {
     "esbuild": "^0.25.1",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.31.0",
@@ -31,7 +31,8 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "nodemon": "^3.1.9",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^3.4.17"
   },
   "dependencies": {
     "express": "^5.1.0"
