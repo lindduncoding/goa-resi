@@ -22,10 +22,10 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/80 shadow-lg backdrop-blur-sm' : 'bg-transparent'
+        isScrolled ? 'bg-white/80 shadow-lg backdrop-blur-sm' : 'bg-transparent'
       }`}
     >
-      <div className="w-full shadow-[0px_4px_40px_10px_rgba(0,0,0,0.25)] flex justify-between items-center px-6 md:px-12 lg:px-20 py-4">
+      <div className="w-full shadow-lg flex justify-between items-center px-6 md:px-12 lg:px-20 py-4">
         {/* Logo as menu toggle on mobile */}
         <button
           onClick={toggleMenu}
@@ -40,8 +40,8 @@ export default function Navbar() {
           {menuItems.map((item) => (
             <div
               key={item}
-              className="text-white text-base lg:text-lg font-medium font-poppins hover:text-blue-600 transition-colors"
-            >
+              className={` ${isScrolled ? 'text-grey-800' : 'text-white'} text-base lg:text-lg font-medium font-poppins hover:text-green-600 transition-colors`
+              }>
               {item}
             </div>
           ))}

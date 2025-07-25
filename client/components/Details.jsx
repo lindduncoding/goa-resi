@@ -16,8 +16,8 @@ export default function Details(){
         </p>
       </div>
       <div className="w-96 h-96 relative rounded-[30px]">
-          <img className="w-64 h-80 left-[173.10px] top-[56.18px] absolute rounded-[30px] shadow-[0px_2.5711662769317627px_8.570554733276367px_0px_rgba(112,112,112,0.50)] border border-green-800" src="https://placehold.co/257x334" />
-          <img className="w-64 h-80 left-0 top-0 absolute rounded-[30px] shadow-[0px_2.5711662769317627px_8.570554733276367px_0px_rgba(112,112,112,0.50)] border border-green-800" src="https://placehold.co/257x334" />
+          <img className="w-64 h-80 left-[173.10px] top-[56.18px] absolute rounded-[30px] shadow-lg border border-green-800" src="https://placehold.co/257x334" />
+          <img className="w-64 h-80 left-0 top-0 absolute rounded-[30px] shadow-lg border border-green-800" src="https://placehold.co/257x334" />
       </div>
     </div>
   </div>
