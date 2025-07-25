@@ -17,7 +17,13 @@ export default function Navbar() {
     setIsOpen(!isOpen)
   }
 
-  const menuItems = ["Beranda", "Tentang", "Galeri", "Informasi", "Kontak"]
+  const menuItems = [
+    {title: "Beranda", ref: "#home"}, 
+    {title: "Tentang", ref: "#details"}, 
+    {title: "Galeri", ref: "#gallery"}, 
+    {title: "Informasi", ref: "#activities"}, 
+    {title: "Kontak", ref: "#travel"}
+  ]
 
   return (
     <nav
@@ -37,13 +43,15 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6">
-          {menuItems.map((item) => (
-            <div
-              key={item}
+          {menuItems.map(({ title, ref }) => (
+            <a
+              key={title}
               className={` ${isScrolled ? 'text-grey-800' : 'text-white'} text-base lg:text-lg font-medium font-poppins hover:text-green-600 transition-colors`
-              }>
-              {item}
-            </div>
+              }
+              href={ref}
+              >
+              {title}
+            </a>
           ))}
         </div>
       </div>

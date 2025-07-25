@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Activities () {
   return (
-    <div className="w-full px-4 md:px-8 lg:px-24 py-14 bg-green-800">
+    <section id="activities" className="w-full px-4 md:px-8 lg:px-24 py-14 bg-green-800">
     <div className="text-center text-white text-4xl md:text-5xl font-bold font-poppins mb-12">
       Activities
     </div>
@@ -29,6 +29,6 @@ export default function Activities () {
         </div>
       ))}
     </div>
-  </div>
+  </section>
   )
 }

@@ -21,7 +21,7 @@ export default function Gallery({ embeds }) {
   }, [embeds]);
 
   return (
-    <div className="w-full px-4 sm:px-8 lg:px-32 py-12 bg-white flex flex-col items-center gap-10">
+    <section id="gallery" className="w-full px-4 sm:px-8 lg:px-32 py-12 bg-white flex flex-col items-center gap-10">
       <h2 className="text-center text-green-800 text-4xl sm:text-5xl font-bold font-outfit">Gallery</h2>
 
       {/* Dekstop */}
@@ -54,6 +54,6 @@ export default function Gallery({ embeds }) {
       >
         Lihat Galeri
       </button>
-    </div>
+    </section>
   )
 }

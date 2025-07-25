@@ -17,7 +17,7 @@ const paketData = [
 
 export default function Travel () {
   return (
-    <div className="w-full px-4 md:px-10 lg:px-32 py-14 bg-white flex flex-col items-center gap-12 overflow-hidden">
+    <section id="travel" className="w-full px-4 md:px-10 lg:px-32 py-14 bg-white flex flex-col items-center gap-12 overflow-hidden">
       <div className="text-center text-green-800 text-4xl md:text-6xl font-bold font-poppins">
         Paket Wisata
       </div>
@@ -42,6 +42,6 @@ export default function Travel () {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
